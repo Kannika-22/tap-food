@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FoodHub | Cart</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+	href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+	rel="stylesheet">
+
+<link rel="stylesheet" href="css/cart.css">
+
+</head>
+
+<body>
+
+	<!-- ================= NAVBAR ================= -->
+
+	<nav>
+
+		<div class="logo">🍽 FoodHub</div>
+
+		<ul>
+
+			<li><a href="#">Home</a></li>
+
+			<li><a href="#">Restaurants</a></li>
+
+			<li><a href="#">Menu</a></li>
+
+			<li><a href="#" class="active">Cart</a></li>
+
+			<li><a href="#">Orders</a></li>
+
+			<li><a href="#">Contact</a></li>
+
+		</ul>
+
+		<div class="right-nav">
+
+			<input type="text" placeholder="Search Food"> <a href="#">👤
+				Profile</a>
+
+		</div>
+
+	</nav>
+
+	<!-- ================= HERO ================= -->
+
+	<section class="hero">
+
+		<h1>Your Shopping Cart</h1>
+
+		<p>Review your selected delicious meals before proceeding to
+			checkout.</p>
+
+	</section>
+
+	<!-- ================= CART ================= -->
+
+	<section class="cart-container">
+
+		<!-- LEFT SIDE -->
+
+		<div class="cart-items">
+
+			<h2>Cart Items</h2>
+
+			<!-- ================= CARD 1 ================= -->
+
+			<div class="cart-card">
+
+				<div class="cart-image">
+
+					<img src="images/masala-dosa.jpg" alt="Masala Dosa">
+
+				</div>
+
+				<div class="cart-details">
+
+					<h3>Masala Dosa</h3>
+
+					<p class="restaurant">Udupi Grand Restaurant</p>
+
+					<p class="description">Crispy dosa served with coconut chutney
+						and hot sambar.</p>
+
+					<span class="category"> South Indian </span>
+
+				</div>
+
+				<div class="cart-actions">
+
+					<span class="price"> ₹120 </span>
+
+					<div class="quantity">
+
+						<button>-</button>
+
+						<span>1</span>
+
+						<button>+</button>
+
+					</div>
+
+					<button class="remove-btn">Remove</button>
+
+				</div>
+
+			</div>
+
+			<!-- ================= CARD 2 ================= -->
+
+			<div class="cart-card">
+
+				<div class="cart-image">
+
+					<img src="images/filter-coffee.jpg" alt="Filter Coffee">
+
+				</div>
+
+				<div class="cart-details">
+
+					<h3>Filter Coffee</h3>
+
+					<p class="restaurant">Udupi Grand Restaurant</p>
+
+					<p class="description">Authentic South Indian filter coffee.</p>
+
+					<span class="category"> Beverage </span>
+
+				</div>
+
+				<div class="cart-actions">
+
+					<span class="price"> ₹50 </span>
+
+					<div class="quantity">
+
+						<button>-</button>
+
+						<span>2</span>
+
+						<button>+</button>
+
+					</div>
+
+					<button class="remove-btn">Remove</button>
+
+				</div>
+
+			</div>
+
+			<!-- ================= CARD 3 ================= -->
+
+			<div class="cart-card">
+
+				<div class="cart-image">
+
+					<img src="images/idli-vada.jpg" alt="Idli Vada">
+
+				</div>
+
+				<div class="cart-details">
+
+					<h3>Idli Vada</h3>
+
+					<p class="restaurant">Udupi Grand Restaurant</p>
+
+					<p class="description">Soft idlis served with crispy vada.</p>
+
+					<span class="category"> Breakfast </span>
+
+				</div>
+
+				<div class="cart-actions">
+
+					<span class="price"> ₹90 </span>
+
+					<div class="quantity">
+
+						<button>-</button>
+
+						<span>1</span>
+
+						<button>+</button>
+
+					</div>
+
+					<button class="remove-btn">Remove</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- RIGHT SIDE -->
+
+		<aside class="summary-card">
+
+			<h2>Order Summary</h2>
+
+			<div class="summary-row">
+
+				<span>Subtotal</span> <span>₹310</span>
+
+			</div>
+
+			<div class="summary-row">
+
+				<span>Delivery Fee</span> <span>₹40</span>
+
+			</div>
+
+			<div class="summary-row">
+
+				<span>Platform Fee</span> <span>₹10</span>
+
+			</div>
+
+			<div class="summary-row">
+
+				<span>GST</span> <span>₹18</span>
+
+			</div>
+
+			<div class="divider"></div>
+
+			<div class="summary-row total">
+
+				<span>Total</span> <span>₹378</span>
+
+			</div>
+
+			<div class="coupon">
+
+				<input type="text" placeholder="Enter Coupon Code">
+
+				<button>Apply</button>
+
+			</div>
+
+			<button class="checkout-btn">Proceed to Checkout</button>
+
+		</aside>
+
+	</section>
+
+	<!-- ==========================================
+            RECOMMENDED ITEMS
+    =========================================== -->
+
+	<section class="recommend-section">
+
+		<div class="section-title">
+
+			<h2>You May Also Like</h2>
+
+			<p>Freshly prepared dishes recommended for you.</p>
+
+		</div>
+
+		<div class="recommend-grid">
+
+			<!-- Card 1 -->
+
+			<div class="recommend-card">
+
+				<img src="images/chicken-biryani.jpg" alt="Chicken Biryani">
+
+				<div class="recommend-content">
+
+					<h3>Chicken Biryani</h3>
+
+					<p>Rich Hyderabadi dum biryani served with raita.</p>
+
+					<div class="recommend-bottom">
+
+						<span>₹249</span>
+
+						<button>Add</button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Card 2 -->
+
+			<div class="recommend-card">
+
+				<img src="images/paneer-butter-masala.jpg"
+					alt="Paneer Butter Masala">
+
+				<div class="recommend-content">
+
+					<h3>Paneer Butter Masala</h3>
+
+					<p>Creamy tomato gravy with soft paneer cubes.</p>
+
+					<div class="recommend-bottom">
+
+						<span>₹219</span>
+
+						<button>Add</button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Card 3 -->
+
+			<div class="recommend-card">
+
+				<img src="images/margherita-pizza.jpg" alt="Margherita Pizza">
+
+				<div class="recommend-content">
+
+					<h3>Margherita Pizza</h3>
+
+					<p>Fresh mozzarella cheese with basil toppings.</p>
+
+					<div class="recommend-bottom">
+
+						<span>₹299</span>
+
+						<button>Add</button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Card 4 -->
+
+			<div class="recommend-card">
+
+				<img src="images/chocolate-brownie.jpg" alt="Chocolate Brownie">
+
+				<div class="recommend-content">
+
+					<h3>Chocolate Brownie</h3>
+
+					<p>Warm chocolate brownie served with ice cream.</p>
+
+					<div class="recommend-bottom">
+
+						<span>₹169</span>
+
+						<button>Add</button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+	<!-- ==========================================
+                DELIVERY BENEFITS
+    =========================================== -->
+
+	<section class="benefits">
+
+		<div class="benefit">
+
+			<div class="icon">🚚</div>
+
+			<h3>Fast Delivery</h3>
+
+			<p>Fresh food delivered in less than 30 minutes.</p>
+
+		</div>
+
+		<div class="benefit">
+
+			<div class="icon">🛡</div>
+
+			<h3>Safe Packaging</h3>
+
+			<p>Tamper-proof hygienic packaging for every order.</p>
+
+		</div>
+
+		<div class="benefit">
+
+			<div class="icon">💳</div>
+
+			<h3>Secure Payment</h3>
+
+			<p>Multiple payment options with complete security.</p>
+
+		</div>
+
+		<div class="benefit">
+
+			<div class="icon">⭐</div>
+
+			<h3>Top Rated Restaurants</h3>
+
+			<p>Choose from hundreds of highly rated restaurants.</p>
+
+		</div>
+
+	</section>
+
+
+
+	<!-- ==========================================
+                    FOOTER
+    =========================================== -->
+
+	<footer>
+
+		<div class="footer-container">
+
+			<div class="footer-column">
+
+				<h2>🍽 FoodHub</h2>
+
+				<p>Bringing delicious food from your favourite restaurants
+					directly to your doorstep.</p>
+
+			</div>
+
+			<div class="footer-column">
+
+				<h3>Quick Links</h3>
+
+				<a href="#">Home</a> <a href="#">Restaurants</a> <a href="#">Menu</a>
+
+				<a href="#">Cart</a> <a href="#">Orders</a>
+
+			</div>
+
+			<div class="footer-column">
+
+				<h3>Support</h3>
+
+				<a href="#">Help Center</a> <a href="#">Privacy Policy</a> <a
+					href="#">Terms & Conditions</a> <a href="#">Refund Policy</a>
+
+			</div>
+
+			<div class="footer-column">
+
+				<h3>Contact</h3>
+
+				<p>📍 Bengaluru, India</p>
+
+				<p>📞 +91 9876543210</p>
+
+				<p>✉ support@foodhub.com</p>
+
+			</div>
+
+		</div>
+
+		<div class="footer-bottom">© 2026 FoodHub. All Rights Reserved.
+
+		</div>
+
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #1c2434;
+	border-radius: 18px;
+	overflow: hidden;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, .35);
+}
+
+thead {
+	background: #ff6b00;
+}
+
+thead th {
+	padding: 18px;
+	text-align: left;
+	font-size: 15px;
+	color: white;
+}
+
+tbody td {
+	padding: 18px;
+	border-bottom: 1px solid rgba(255, 255, 255, .05);
+	color: #d9d9d9;
+}
+
+tbody tr:hover {
+	background: #252d40;
+}
+
+.top-bar {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.small-btn {
+	background: #2563eb;
+	padding: 8px 14px;
+	border-radius: 8px;
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.edit-btn {
+	background: #22c55e;
+	padding: 8px 16px;
+	border-radius: 8px;
+	text-decoration: none;
+	color: white;
+}
+
+.delete-btn {
+	background: #ef4444;
+	padding: 8px 16px;
+	border-radius: 8px;
+	text-decoration: none;
+	color: white;
+}

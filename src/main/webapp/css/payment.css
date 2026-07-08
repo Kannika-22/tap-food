@@ -1,0 +1,1687 @@
+/*======================================================
+                    GOOGLE FONT
+======================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*======================================================
+                    RESET
+======================================================*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#0f1117;
+    
+    color:#ffffff;
+
+    overflow-x:hidden;
+
+}
+
+/*======================================================
+                CUSTOM SCROLLBAR
+======================================================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eef2f7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#c8ced8;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#9aa5b5;
+
+}
+
+/*======================================================
+                MAIN LAYOUT
+======================================================*/
+
+.payment-wrapper{
+
+    display:flex;
+
+    width:100%;
+
+    min-height:100vh;
+
+}
+
+/*======================================================
+                SIDEBAR
+======================================================*/
+
+.sidebar{
+
+    width:310px;
+
+    height:100vh;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    background:#181b25;
+
+    color:#fff;
+
+    padding:35px 25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    overflow-y:auto;
+
+}
+
+/*======================================================
+                LOGO
+======================================================*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:45px;
+
+}
+
+.logo i{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:15px;
+
+    background:#ff6b00;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:22px;
+
+}
+
+.logo h1{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+/*======================================================
+            PAYMENT TITLE
+======================================================*/
+
+.sidebar-title{
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+/*======================================================
+        PAYMENT LIST
+======================================================*/
+
+.payment-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+/*======================================================
+        PAYMENT ITEM
+======================================================*/
+
+.payment-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    background:transparent;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    color:white;
+
+}
+
+.payment-item div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.payment-item i{
+
+    font-size:20px;
+
+    color:#ff6b00;
+
+}
+
+.payment-item img{
+
+width:38px;
+
+height:38px;
+
+object-fit:contain;
+
+padding:4px;
+
+background:white;
+
+border-radius:10px;
+
+}
+
+.payment-item span{
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.payment-item small{
+
+    color:#94a3b8;
+
+    font-size:12px;
+
+}
+
+.payment-item:hover{
+
+background:#232733;
+
+border-color:#ff6b00;
+
+transform:translateX(6px);
+
+box-shadow:0 0 20px rgba(255,107,0,.20);
+
+}
+
+.payment-item.active{
+
+    background:#ff6b00;
+
+    border-color:#ff6b00;
+
+}
+
+.payment-item.active i,
+
+.payment-item.active span,
+
+.payment-item.active small{
+
+    color:white;
+
+}
+
+/*======================================================
+            SIDEBAR FOOTER
+======================================================*/
+
+.sidebar-bottom{
+
+    margin-top:35px;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    background:#162033;
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:center;
+
+}
+
+.secure-circle{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#ff6b00;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:22px;
+
+}
+
+.sidebar-bottom h3{
+
+    font-size:17px;
+
+    margin-bottom:4px;
+
+}
+
+.sidebar-bottom p{
+
+    color:#cbd5e1;
+
+    font-size:13px;
+
+}
+
+/*======================================================
+            CONTENT AREA
+======================================================*/
+
+.payment-content{
+
+    flex:1;
+
+    margin-left:310px;
+
+    padding:45px;
+
+    min-height:100vh;
+
+}
+
+/*======================================================
+            HEADER
+======================================================*/
+
+.payment-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.payment-header h1{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+.payment-header p{
+
+    color:#b7bec8;
+
+    font-size:15px;
+
+}
+
+/*======================================================
+        HEADER SECURITY
+======================================================*/
+
+.header-security{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.security-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    background:#232733;
+
+	border:1px solid #3d4454;
+	
+	color:white;
+
+    padding:15px 20px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.security-box i{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#ff6b00;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+}
+
+.security-box h4{
+
+    font-size:15px;
+
+}
+
+.security-box span{
+
+    font-size:13px;
+
+    color:#cbd5e1;
+
+}
+
+/*======================================================
+                PAYMENT CARD LAYOUT
+======================================================*/
+
+.payment-card,
+.wallet-card{
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:45px;
+
+    background:#1a1f2d;
+
+    border-radius:28px;
+
+    padding:40px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 15px 40px rgba(15,23,42,.08);
+
+}
+
+/*======================================================
+                LEFT CARD PREVIEW
+======================================================*/
+
+.card-left{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/*======================================================
+                REAL BANK CARD
+======================================================*/
+
+.real-card{
+
+    width:360px;
+
+    height:220px;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+    
+    background-blend-mode:multiply;
+
+}
+
+/*======================================================
+                VISA CARD
+======================================================*/
+
+.visa-card{
+
+background:
+
+linear-gradient(135deg,#1f2937,#0f172a 55%,#111827);
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.master-card{
+
+background:
+
+linear-gradient(135deg,#312e81,#111827 55%,#1f2937);
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+/*======================================================
+            CARD SHINE EFFECT
+======================================================*/
+
+.real-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+
+    left:-120px;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.12);
+
+}
+
+.real-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-80px;
+
+    bottom:-80px;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+/*======================================================
+            CARD TOP
+======================================================*/
+
+.card-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/*======================================================
+                CHIP
+======================================================*/
+
+.chip{
+
+    width:65px;
+
+    height:45px;
+
+    object-fit:contain;
+
+    filter:drop-shadow(0 4px 8px rgba(0,0,0,.35));
+
+}
+
+.brand{
+
+    width:78px;
+
+    height:42px;
+
+    object-fit:contain;
+
+    filter:drop-shadow(0 3px 8px rgba(0,0,0,.35));
+
+}
+
+/*======================================================
+            CARD NUMBER
+======================================================*/
+
+.card-number{
+
+    margin-top:45px;
+
+    font-size:28px;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+}
+
+/*======================================================
+            CARD BOTTOM
+======================================================*/
+
+.card-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:38px;
+
+}
+
+.card-bottom span{
+
+    font-size:11px;
+
+    color:rgba(255,255,255,.7);
+
+    letter-spacing:1px;
+
+}
+
+.card-bottom h4{
+
+    margin-top:6px;
+
+    font-size:16px;
+
+}
+
+/*======================================================
+            RIGHT FORM
+======================================================*/
+
+.card-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.card-right h2{
+
+    font-size:34px;
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.card-right p{
+
+    color:#cbd5e1;
+
+    margin-bottom:30px;
+
+}
+
+/*======================================================
+                INPUT GROUP
+======================================================*/
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+font-size:14px;
+
+font-weight:600;
+
+margin-bottom:10px;
+
+color:#ffffff;
+
+}
+
+.input-group input,
+.input-group select{
+
+height:58px;
+
+background:#232733;
+
+border:2px solid transparent;
+
+border-radius:16px;
+
+padding:0 18px;
+
+color:#ffffff;
+
+transition:
+
+transform .35s,
+
+border-color .35s,
+
+box-shadow .35s,
+
+background .35s;
+
+}
+
+.input-group input:hover,
+.input-group select:hover{
+
+transform:translateY(-2px);
+
+border-color:#ff6b00;
+
+}
+
+.input-group input:focus,
+.input-group select:focus{
+
+transform:scale(1.02);
+
+border-color:#ff6b00;
+
+box-shadow:0 0 18px rgba(255,107,0,.30);
+
+}
+
+/*======================================================
+                ROW
+======================================================*/
+
+.row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+/*======================================================
+            SAVE CARD
+======================================================*/
+
+.save-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:10px 0 25px;
+
+    color:#4b5563;
+
+    font-size:14px;
+
+}
+
+.save-card input{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+/*======================================================
+            SECURITY TEXT
+======================================================*/
+
+.secure-text{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#059669;
+
+    font-size:14px;
+
+    margin-bottom:30px;
+
+}
+
+.secure-text i{
+
+    font-size:18px;
+
+}
+
+/*======================================================
+            PAYMENT BUTTON
+======================================================*/
+
+.pay-button{
+
+    width:100%;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:linear-gradient(135deg,#ff6b00,#ff8c42);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 12px 25px rgba(255,107,0,.28);
+
+}
+
+.pay-button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 18px 35px rgba(255,107,0,.35);
+
+}
+
+.pay-button:active{
+
+    transform:scale(.98);
+
+}
+
+/*======================================================
+                WALLET PAYMENT CARD
+======================================================*/
+
+.wallet-card{
+
+display:flex;
+flex-direction:column;
+gap:28px;
+
+background:#1a1f2d;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:28px;
+
+padding:40px;
+
+box-shadow:0 18px 40px rgba(0,0,0,.45);
+
+transition:.4s;
+}
+
+.wallet-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+}
+
+/*======================================================
+                WALLET HEADER
+======================================================*/
+
+.wallet-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding-bottom:20px;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.wallet-logo{
+
+width:74px;
+
+height:74px;
+
+object-fit:contain;
+
+background:#ffffff;
+
+padding:12px;
+
+border-radius:16px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.cod-logo{
+
+    width:65px;
+
+    height:65px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:16px;
+
+    background:#ff6b00;
+
+    color:#fff;
+
+    font-size:30px;
+
+}
+
+.wallet-header h2{
+
+font-size:30px;
+
+font-weight:700;
+
+color:#ffffff;
+
+margin-bottom:6px;
+
+}
+
+.wallet-header p{
+
+color:#cbd5e1;
+
+font-size:15px;
+
+}
+
+/*======================================================
+                PAYMENT AMOUNT
+======================================================*/
+
+.wallet-summary{
+
+background:#232733;
+
+border:1px solid #3d4454;
+
+border-radius:20px;
+
+padding:25px;
+
+}
+
+.amount-box{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.amount-box span{
+
+    color:#6b7280;
+
+    font-size:16px;
+
+}
+
+.amount-box h1{
+
+    font-size:34px;
+
+    color:#ff6b00;
+
+    font-weight:700;
+
+}
+
+/*======================================================
+                UPI APPS
+======================================================*/
+
+.upi-apps{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:18px;
+
+width:100%;
+
+margin-top:15px;
+
+flex-wrap:nowrap;
+
+}
+
+
+.upi-app{
+
+flex:1;
+
+max-width:170px;
+
+height:150px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+background:white;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:22px;
+
+height:170px;
+
+padding:20px;
+
+box-shadow:0 12px 25px rgba(0,0,0,.35);
+
+border:1px solid #3d4454;
+
+border-radius:18px;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.upi-app img{
+
+    width:72px;
+
+    height:72px;
+
+    object-fit:contain;
+
+    filter:drop-shadow(0 6px 15px rgba(255,255,255,.18));
+
+    transition:.35s;
+
+    object-fit:contain;
+
+    margin-bottom:12px;
+
+}
+
+.upi-app:hover img{
+
+    transform:scale(1.12);
+
+}
+
+.upi-app span{
+
+    font-weight:600;
+
+    margin-top:12px;
+
+	font-size:16px;
+	
+	font-weight:600;
+	
+	color:black;
+
+}
+
+.upi-app:hover{
+
+    border-color:#ff6b00;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(255,107,0,.15);
+
+}
+
+/*======================================================
+                APPLE FACE BOX
+======================================================*/
+
+.apple-face{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:24px;
+
+    border-radius:18px;
+
+    background:#111827;
+
+    color:#fff;
+
+}
+
+.apple-face i{
+
+    font-size:42px;
+
+}
+
+.apple-face h3{
+
+    margin-bottom:5px;
+
+}
+
+.apple-face p{
+
+    color:#d1d5db;
+
+}
+
+/*======================================================
+                COD DETAILS
+======================================================*/
+
+.cod-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.cod-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#232733;
+
+	border:1px solid #3d4454;
+	
+	color:white;
+
+}
+
+.cod-item i{
+
+    color:#10b981;
+
+    font-size:22px;
+
+}
+
+/*======================================================
+                TRUST SECTION
+======================================================*/
+
+.trust-section{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    margin:35px 0;
+
+}
+
+.trust-box{
+
+    background:#232733;
+    
+    color:white;
+    
+    border:1px solid #3d4454;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.trust-box i{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#ff6b00;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:22px;
+
+}
+
+.trust-box h4{
+
+    margin-bottom:4px;
+
+    color:white;
+
+}
+
+.trust-box p{
+
+    color:white;
+
+    font-size:14px;
+
+}
+
+/*======================================================
+                STICKY PAY BUTTON
+======================================================*/
+
+.payment-card,
+.wallet-card{
+    position:relative;
+}
+
+.pay-button{
+
+    position:sticky;
+
+    bottom:20px;
+
+    z-index:20;
+
+}
+
+/*======================================================
+                BUTTON ANIMATION
+======================================================*/
+
+.pay-button{
+
+    overflow:hidden;
+
+}
+
+.pay-button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.18);
+
+    transition:.6s;
+
+}
+
+.pay-button:hover::before{
+
+    left:100%;
+
+}
+
+/*======================================================
+                INPUT PLACEHOLDER
+======================================================*/
+
+::placeholder{
+
+color:#9ca3af;
+
+font-weight:400;
+
+}
+
+/*======================================================
+                AUTOFILL FIX
+======================================================*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+
+-webkit-box-shadow:0 0 0 1000px #232733 inset;
+
+-webkit-text-fill-color:#ffffff;
+
+}
+
+/*======================================================
+                INPUT HOVER
+======================================================*/
+
+.input-group input:hover,
+.input-group select:hover{
+
+    border-color:#ff6b00;
+
+}
+
+/*======================================================
+                PAYMENT CONTENT
+======================================================*/
+
+.payment-content{
+
+    overflow-y:auto;
+
+}
+
+/*======================================================
+                SIDEBAR SCROLLBAR
+======================================================*/
+
+.sidebar::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+
+    background:#334155;
+
+    border-radius:20px;
+
+}
+
+/*======================================================
+                SMOOTH TRANSITIONS
+======================================================*/
+
+.payment-item,
+.pay-button,
+.input-group input,
+.input-group select,
+.upi-app,
+.trust-box,
+.security-box,
+.real-card{
+
+    transition:.35s ease;
+
+}
+
+/*======================================================
+                HOVER LIFT
+======================================================*/
+
+.trust-box:hover,
+.security-box:hover,
+.upi-app:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.real-card:hover{
+
+    transform:rotate(-1deg) scale(1.02);
+
+}
+
+/*======================================================
+                MOBILE
+======================================================*/
+
+@media(max-width:1200px){
+
+.payment-card,
+.wallet-card{
+
+grid-template-columns:1fr;
+
+}
+
+.card-left{
+
+margin-bottom:30px;
+
+}
+
+.trust-section{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/*======================================================
+                TABLET
+======================================================*/
+
+@media(max-width:900px){
+
+.sidebar{
+
+width:260px;
+
+}
+
+.payment-content{
+
+margin-left:260px;
+
+padding:30px;
+
+}
+
+.payment-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+.header-security{
+
+width:100%;
+
+justify-content:flex-start;
+
+flex-wrap:wrap;
+
+}
+
+}
+
+/*======================================================
+                MOBILE
+======================================================*/
+
+@media(max-width:768px){
+
+.payment-wrapper{
+
+display:block;
+
+}
+
+.sidebar{
+
+position:relative;
+
+width:100%;
+
+height:auto;
+
+}
+
+.payment-content{
+
+margin-left:0;
+
+padding:20px;
+
+}
+
+.logo{
+
+justify-content:center;
+
+}
+
+.payment-list{
+
+margin-top:20px;
+
+}
+
+.payment-header h1{
+
+font-size:30px;
+
+}
+
+.payment-card,
+.wallet-card{
+
+padding:22px;
+
+}
+
+.real-card{
+
+width:100%;
+
+max-width:340px;
+
+height:210px;
+
+}
+
+.row{
+
+grid-template-columns:1fr;
+
+}
+
+.upi-apps{
+
+flex-direction:column;
+
+}
+
+}
+
+/*======================================================
+                SMALL MOBILE
+======================================================*/
+
+@media(max-width:480px){
+
+.payment-header h1{
+
+font-size:26px;
+
+}
+
+.logo h1{
+
+font-size:24px;
+
+}
+
+.summary-total h2{
+
+font-size:28px;
+
+}
+
+.wallet-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.wallet-logo{
+
+width:55px;
+
+}
+
+.pay-button{
+
+height:56px;
+
+font-size:16px;
+
+}
+
+}

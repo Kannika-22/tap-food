@@ -1,0 +1,872 @@
+/*=========================================
+        GOOGLE FONT & RESET
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f1117;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/*=========================================
+            SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff6b00;
+    border-radius:20px;
+}
+
+/*=========================================
+            NAVBAR
+=========================================*/
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 4%;
+
+    background:#181b25;
+
+    position:sticky;
+    top:0;
+    z-index:999;
+
+    gap:20px;
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:30px;
+    font-weight:700;
+
+    color:#ff6b00;
+    text-decoration:none;
+
+    gap:10px;
+
+    white-space:nowrap;
+
+    flex-shrink:0;
+
+    margin-right:40px;
+
+    transition:.3s;
+}
+
+.logo:hover{
+
+    color:#ff8c42;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    align-items:center;
+
+    list-style:none;
+
+    gap:30px;
+
+    flex:1;
+
+    justify-content:center;
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.35s;
+}
+
+nav ul li a:hover{
+
+    color:#ff8c42;
+}
+
+.right-nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    flex-shrink:0;
+}
+
+/*=========================================
+        SEARCH BAR
+=========================================*/
+
+.search{
+
+    display:flex;
+
+    align-items:center;
+
+    width:280px;
+
+    height:48px;
+
+    background:#232733;
+
+    border:2px solid transparent;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    margin-left:30px;
+}
+
+.search:hover{
+
+    border-color:#ff6b00;
+
+    box-shadow:0 0 18px rgba(255,107,0,.25);
+}
+
+.search:focus-within{
+
+    border-color:#ff6b00;
+
+    box-shadow:0 0 18px rgba(255,107,0,.35);
+}
+
+.search input{
+
+    flex:1;
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:#232733;
+
+    color:#fff;
+
+    padding:0 18px;
+
+    font-size:15px;
+
+    caret-color:#ff6b00;
+}
+
+.search input::placeholder{
+
+    color:#9ca3af;
+}
+
+.search button{
+
+    width:56px;
+
+    height:48px;
+
+    border:none;
+
+    background:transparent;
+
+    color:#9ca3af;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    transition:.35s;
+}
+
+.search button:hover{
+
+    color:#ff6b00;
+
+    transform:scale(1.12);
+}
+
+.nav-button{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:110px;
+
+    height:48px;
+
+    padding:0 22px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    background:linear-gradient(135deg,#ff6b00,#ff8c42);
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(255,107,0,.35);
+}
+
+.nav-button:hover{
+
+    transform:translateY(-3px);
+
+    background:linear-gradient(135deg,#ff7b20,#ff9c50);
+
+    box-shadow:0 15px 35px rgba(255,107,0,.45);
+}
+
+/*=========================================
+                HERO
+=========================================*/
+
+.hero{
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+.hero h1{
+
+    font-size:58px;
+
+    font-weight:800;
+
+    margin-bottom:12px;
+
+}
+
+.hero p{
+
+    color:#bdbdbd;
+
+    font-size:18px;
+
+}
+
+/*=========================================
+            ORDERS
+=========================================*/
+
+.orders-container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:50px auto 80px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:35px;
+
+}
+
+.order-card{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    background:#1b2233;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.35);
+
+    transition:.35s;
+
+}
+
+.order-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 25px 45px rgba(255,107,0,.18);
+
+}
+
+.restaurant-image{
+
+    width:320px;
+
+    min-width:320px;
+
+    height:250px;
+
+    overflow:hidden;
+
+    background:#161b26;
+
+}
+
+.restaurant-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.4s;
+
+}
+
+.order-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.order-card:hover .restaurant-image img{
+
+    transform:scale(1.05);
+
+}
+
+.order-content{
+
+    flex:1;
+
+    padding:30px 35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+/*=========================================
+            TOP ROW
+=========================================*/
+
+.top-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:18px;
+
+}
+
+.top-row h2{
+
+    font-size:24px;
+
+    line-height:1.3;
+
+    margin-bottom:8px;
+
+}
+
+.cuisine{
+
+    color:#bdbdbd;
+
+    font-size:15px;
+
+}
+
+/*=========================================
+            STATUS
+=========================================*/
+
+.status span{
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.pending{
+
+    background:rgba(245,158,11,.18);
+
+    color:#f59e0b;
+
+}
+
+.preparing{
+
+    background:rgba(59,130,246,.18);
+
+    color:#3b82f6;
+
+}
+
+.delivered{
+
+    background:rgba(34,197,94,.18);
+
+    color:#22c55e;
+
+}
+
+.cancelled{
+
+    background:rgba(239,68,68,.18);
+
+    color:#ef4444;
+
+}
+
+/*=========================================
+        BOTTOM ROW
+=========================================*/
+
+.bottom-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:30px;
+
+}
+
+.amount{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#ff6b00;
+
+    text-shadow:0 0 15px rgba(255,107,0,.25);
+
+}
+
+/*=========================================
+        ORDER BUTTON
+=========================================*/
+
+.order-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:180px;
+
+    height:52px;
+
+    padding:0 28px;
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    border-radius:30px;
+
+    background:linear-gradient(135deg,#ff6b00,#ff8c42);
+
+    box-shadow:0 12px 28px rgba(255,107,0,.30);
+
+    transition:.35s;
+
+}
+
+.order-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 18px 35px rgba(255,107,0,.45);
+
+}
+
+/*=========================================
+        RESTAURANT DETAILS
+=========================================*/
+
+.restaurant-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    margin-top:25px;
+
+}
+
+.restaurant-details p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#bdbdbd;
+
+    font-size:15px;
+
+}
+
+/*=========================================
+        EMPTY ORDERS
+=========================================*/
+
+.empty-orders{
+
+    text-align:center;
+
+    padding:100px 30px;
+
+    background:#1b2233;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.empty-icon{
+
+    font-size:90px;
+
+    margin-bottom:25px;
+
+}
+
+.empty-orders h2{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+}
+
+.empty-orders p{
+
+    color:#bdbdbd;
+
+    font-size:17px;
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+.browse-btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:40px;
+
+    padding:18px 36px;
+
+    border-radius:30px;
+
+    background:linear-gradient(135deg,#ff6b00,#ff8c42);
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 15px 30px rgba(255,107,0,.30);
+
+}
+
+.browse-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 40px rgba(255,107,0,.45);
+
+}
+
+/*=========================================
+        BENEFITS
+=========================================*/
+
+.benefits{
+
+    width:92%;
+
+    margin:70px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+
+}
+
+.benefit{
+
+    background:#1b2233;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 18px 35px rgba(0,0,0,.25);
+
+}
+
+.benefit:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 22px 40px rgba(255,107,0,.20);
+
+}
+
+.icon{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+}
+
+.benefit h3{
+
+    margin-bottom:12px;
+
+    font-size:22px;
+
+}
+
+.benefit p{
+
+    color:#bdbdbd;
+
+    line-height:1.7;
+
+}
+
+/*=========================================
+        FOOTER
+=========================================*/
+
+footer{
+
+    background:#181b25;
+
+    margin-top:70px;
+
+}
+
+.footer-container{
+
+    width:92%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:40px;
+
+    padding:60px 0;
+
+}
+
+.footer-column h2{
+
+    color:#ff6b00;
+
+    margin-bottom:18px;
+
+}
+
+.footer-column h3{
+
+    margin-bottom:18px;
+
+}
+
+.footer-column p{
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+}
+
+.footer-column a{
+
+    display:block;
+
+    color:#bdbdbd;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+.footer-column a:hover{
+
+    color:#ff8c42;
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+    padding:20px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    color:#bdbdbd;
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:1100px){
+
+.order-card{
+
+    flex-direction:column;
+
+}
+
+.restaurant-image{
+
+    width:100%;
+
+    min-width:100%;
+
+    height:260px;
+
+}
+
+.order-content{
+
+    width:100%;
+
+}
+
+.top-row{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.bottom-row{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.order-btn{
+
+    width:220px;
+
+}
+
+}
